@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.workshop.booksonrent.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/r1">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/content3"
+            android:layout_below="@+id/viewPager"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageviewm1"
+            android:layout_below="@+id/imageView3"
+            android:text="FIRST YEAR"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#212a37"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/imageviewm1"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView4"
+            android:src="@drawable/electrical"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/imageView4"
+            android:src="@drawable/electronics"
+            android:scaleType="fitXY"
+            android:id="@+id/imageview5"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageview6"
+            android:layout_below="@+id/imageview5"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mechanics"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageview6"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_backgroung"
+            android:onClick="firstyr"
+            android:text="MORE BOOKS"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button1"
+            android:text="SECOND YEAR"
+
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#212a37"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/button2"
+            android:onClick="secondyr"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="MORE SECOND YEAR BOOKS"
+            android:layout_below="@+id/textview3"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/aboutdesc"
+
+            android:textAlignment="center"
+            android:textColor="#00008B"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/viewPager"
+            ></android.support.v4.view.ViewPager>
+
+
+    </RelativeLayout>
+
+</ScrollView>
